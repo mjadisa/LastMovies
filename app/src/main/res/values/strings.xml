@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LastMovies</string>
+    <string name="movie_image_label">Movie image</string>
+    <string name="movie_details_screen_label">Movie</string>
+
+    <string name="movie_title_label">Title:</string>
+    <string name="movie_adult_label">Adult:</string>
+    <string name="movie_rate_label">Rating:</string>
+    <string name="movie_vote_label">Votes:</string>
+    <string name="movie_release_date_label">Release Date:</string>
+</resources>
