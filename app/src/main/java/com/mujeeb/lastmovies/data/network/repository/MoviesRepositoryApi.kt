@@ -1,7 +1,7 @@
-package com.mujeeb.lastmovies.repository
+package com.mujeeb.lastmovies.data.network.repository
 
-import com.mujeeb.lastmovies.api.TMDBApi
-import com.mujeeb.lastmovies.api.model.Movie
+import com.mujeeb.lastmovies.data.TMDBApi
+import com.mujeeb.lastmovies.data.network.model.Movie
 import com.mujeeb.lastmovies.common.API_KEY
 import com.mujeeb.lastmovies.common.FetchDataError
 import com.mujeeb.lastmovies.common.SORT_BY

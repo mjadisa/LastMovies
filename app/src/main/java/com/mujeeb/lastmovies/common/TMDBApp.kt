@@ -1,4 +1,4 @@
-package com.mujeeb.lastmovies
+package com.mujeeb.lastmovies.common
 
 import android.app.Activity
 import android.app.Application

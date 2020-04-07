@@ -3,7 +3,7 @@ package com.mujeeb.lastmovies.movielist
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.mujeeb.lastmovies.common.NetworkUtils
-import com.mujeeb.lastmovies.repository.MoviesRepositoryApi
+import com.mujeeb.lastmovies.data.network.repository.MoviesRepositoryApi
 
 
 class MainViewModelFactory(

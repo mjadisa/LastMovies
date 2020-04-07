@@ -6,7 +6,7 @@ import com.mujeeb.lastmovies.di.scope.MainActivityScope
 import com.mujeeb.lastmovies.movielist.MainActivity
 import com.mujeeb.lastmovies.movielist.MainViewModel
 import com.mujeeb.lastmovies.movielist.MainViewModelFactory
-import com.mujeeb.lastmovies.repository.MoviesRepositoryApi
+import com.mujeeb.lastmovies.data.network.repository.MoviesRepositoryApi
 import dagger.Module
 import dagger.Provides
 

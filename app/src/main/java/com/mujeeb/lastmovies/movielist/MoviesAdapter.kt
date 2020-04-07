@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mujeeb.lastmovies.R
-import com.mujeeb.lastmovies.api.model.Movie
+import com.mujeeb.lastmovies.data.network.model.Movie
 import com.mujeeb.lastmovies.common.IMAGE_BASE_URL
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_movie.view.*

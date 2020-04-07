@@ -8,7 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mujeeb.lastmovies.R
-import com.mujeeb.lastmovies.api.model.Movie
+import com.mujeeb.lastmovies.data.network.model.Movie
 import com.mujeeb.lastmovies.common.LIST_ID
 import com.mujeeb.lastmovies.common.MOVIE_INTENT_KEY
 import com.mujeeb.lastmovies.databinding.ActivityMainBinding

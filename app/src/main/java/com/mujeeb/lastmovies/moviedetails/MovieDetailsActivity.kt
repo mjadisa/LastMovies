@@ -3,7 +3,7 @@ package com.mujeeb.lastmovies.moviedetails
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.mujeeb.lastmovies.R
-import com.mujeeb.lastmovies.api.model.Movie
+import com.mujeeb.lastmovies.data.network.model.Movie
 import com.mujeeb.lastmovies.common.DateUtils.Companion.changeDateFormat
 import com.mujeeb.lastmovies.common.IMAGE_BASE_URL
 import com.mujeeb.lastmovies.common.MOVIE_INTENT_KEY

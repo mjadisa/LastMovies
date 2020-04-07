@@ -1,7 +1,7 @@
 package com.mujeeb.lastmovies.di.component
 
 import android.app.Application
-import com.mujeeb.lastmovies.TMDBApp
+import com.mujeeb.lastmovies.common.TMDBApp
 import com.mujeeb.lastmovies.di.module.BuildMainActivityModule
 import com.mujeeb.lastmovies.di.module.NetworkModule
 import com.mujeeb.lastmovies.di.scope.ApplicationScope

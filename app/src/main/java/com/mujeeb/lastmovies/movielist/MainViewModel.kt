@@ -4,10 +4,10 @@ import androidx.databinding.ObservableBoolean
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.mujeeb.lastmovies.api.model.Movie
+import com.mujeeb.lastmovies.data.network.model.Movie
 import com.mujeeb.lastmovies.common.FetchDataError
 import com.mujeeb.lastmovies.common.NetworkUtils
-import com.mujeeb.lastmovies.repository.MoviesRepositoryApi
+import com.mujeeb.lastmovies.data.network.repository.MoviesRepositoryApi
 import kotlinx.coroutines.launch
 
 class MainViewModel(

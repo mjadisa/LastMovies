@@ -1,4 +1,4 @@
-package com.mujeeb.lastmovies.api.model
+package com.mujeeb.lastmovies.data.network.model
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

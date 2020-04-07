@@ -1,7 +1,7 @@
-package com.mujeeb.lastmovies.api
+package com.mujeeb.lastmovies.data
 
 
-import com.mujeeb.lastmovies.api.model.TMDBResponse
+import com.mujeeb.lastmovies.data.network.model.TMDBResponse
 import com.mujeeb.lastmovies.common.BASE_URL
 import retrofit2.http.GET
 import retrofit2.http.Path

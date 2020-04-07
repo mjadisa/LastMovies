@@ -1,6 +1,6 @@
 package com.mujeeb.lastmovies.movielist
 
-import com.mujeeb.lastmovies.api.model.Movie
+import com.mujeeb.lastmovies.data.network.model.Movie
 
 sealed class DataRequestState{
     class Success(val movies : List<Movie>?) : DataRequestState()

@@ -2,7 +2,7 @@ package com.mujeeb.lastmovies.di.module;
 
 import android.app.Application;
 
-import com.mujeeb.lastmovies.api.TMDBApi;
+import com.mujeeb.lastmovies.data.TMDBApi;
 import com.mujeeb.lastmovies.di.scope.ApplicationScope;
 
 import java.util.concurrent.TimeUnit;
