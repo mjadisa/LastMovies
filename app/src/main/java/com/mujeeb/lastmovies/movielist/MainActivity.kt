@@ -37,14 +37,17 @@ class MainActivity : AppCompatActivity(), MovieSelectedInterface {
 
         setupRecyclerView()
 
-        mainViewModel.getMoviesObservable().observe(this, Observer {
-            it?.let { movies -> moviesAdapter.setData(movies) }
+        mainViewModel.getDataRequestObservable().observe(this, Observer {
+            it?.let {
+                when (it) {
+                    is DataRequestState.Success -> moviesAdapter.setData(it.movies)
+                    is DataRequestState.Error -> Toast.makeText(this, it.error, Toast.LENGTH_LONG)
+                        .show()
 
+                }
+            }
         })
 
-
-        mainViewModel.getErrorObservable().observe(this,
-            Observer { Toast.makeText(this, it.toString(), Toast.LENGTH_LONG).show() })
 
         mainViewModel.getData(LIST_ID)
 

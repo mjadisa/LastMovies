@@ -1,7 +1,6 @@
 package com.mujeeb.lastmovies.movielist
 
 import androidx.databinding.ObservableBoolean
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -16,15 +15,13 @@ class MainViewModel(
     private val utils: NetworkUtils
 ) : ViewModel() {
 
-    private val moviesObservable = MutableLiveData<List<Movie>>()
-    private val errorObservable = MutableLiveData<String>()
+    private val dataRequestObservable: MutableLiveData<DataRequestState> = MutableLiveData()
+
     private val progressObservable = ObservableBoolean(false)
 
     private var isLoading: Boolean = false
 
-    fun getMoviesObservable(): LiveData<List<Movie>> = moviesObservable
-
-    fun getErrorObservable() = errorObservable
+    fun getDataRequestObservable() = dataRequestObservable
 
     fun getProgressObservable() = progressObservable
 
@@ -36,12 +33,13 @@ class MainViewModel(
                     val response = moviesRepositoryApi.fetchMovies(id)
                     handleSuccess(response)
                 } catch (error: FetchDataError) {
-                    errorObservable.value = error.message
+                    dataRequestObservable.value = DataRequestState.Error(error.message)
                 } finally {
                     processLoadingStateChange(false)
                 }
             } else {
-                errorObservable.value = "Please check your internet connection and try again!"
+                dataRequestObservable.value =
+                    DataRequestState.Error("Please check your internet connection and try again!")
             }
         }
 
@@ -49,7 +47,7 @@ class MainViewModel(
     }
 
     private fun handleSuccess(response: List<Movie>?) {
-        moviesObservable.value = response
+        dataRequestObservable.value = DataRequestState.Success(response)
     }
 
 

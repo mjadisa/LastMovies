@@ -38,8 +38,10 @@ class MoviesAdapter(listener: MovieSelectedInterface) :
 
     override fun getItemCount(): Int = movies.size
 
-    fun setData(movies: List<Movie>) {
-        this.movies = movies
+    fun setData(movies: List<Movie>?) {
+        if (movies != null) {
+            this.movies = movies
+        }
         notifyDataSetChanged()
     }
 
